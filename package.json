@@ -1,0 +1,47 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "author": "Pixel Rocket",
+  "license": "MIT",
+  "description": "HTML boilerplate. Uses Parcel as the bundler/build tool.",
+  "scripts": {
+    "dev": "parcel src/*.html --no-cache",
+    "build": "parcel build src/*.html --no-minify --public-url ./"
+  },
+  "customDistStructure": {
+    "config": {
+      "assets/js": [
+        ".js"
+      ],
+      "assets/css": [
+        ".css",
+        ".scss"
+      ],
+      "assets/fonts": [
+        ".woff",
+        ".woff2",
+        ".ttf",
+        ".eot"
+      ],
+      "assets/images": [
+        "png",
+        "svg",
+        "jpg",
+        "jpg2",
+        "jpeg",
+        "gif",
+        "bmp",
+        "webm"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  },  
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.18",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "sass": "^1.45.2"
+  }
+}
